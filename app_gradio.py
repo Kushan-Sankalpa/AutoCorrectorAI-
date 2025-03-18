@@ -1,11 +1,11 @@
-import gradio as gr
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, pipeline
+import gradio as gr # i used this for to create the web app
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, pipeline  # Transformers Library gives us access to many pre-trained models like T5
 
 # Initialize the T5-based grammar correction model
 model_name = "vennify/t5-base-grammar-correction"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-grammar_corrector = pipeline("text2text-generation", model=model, tokenizer=tokenizer)
+tokenizer = AutoTokenizer.from_pretrained(model_name) # Loads the tokenizer that will convert the input text into a format that the model can understand
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name) # Loads the actual AI model that will generate the corrected senetnces
+grammar_corrector = pipeline("text2text-generation", model=model, tokenizer=tokenizer) #A helper that makes it easier to use the model.
 
 def autocorrect_text(input_text):
     corrected_output = grammar_corrector(input_text, max_length=256, do_sample=False)[0]['generated_text']
