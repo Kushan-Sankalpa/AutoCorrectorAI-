@@ -12,7 +12,7 @@ def autocorrect_text(input_text):
     return corrected_output
 
 with gr.Blocks() as demo:
-    gr.Markdown("# Autocorrector-AI/Spell Checker Tool")
+    gr.Markdown("# Autocorrector-AI/ Powered By Kushan Sankalpa")
     gr.Markdown("Type or paste your text below and see the corrected version.")
     
     text_input = gr.Textbox(label="Input Text", lines=6, placeholder="Enter text here...")
