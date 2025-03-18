@@ -19,8 +19,6 @@ The project features an interactive web interface built with [Gradio](https://gr
 - [Usage](#usage)
 - [How It Works](#how-it-works)
 - [Example](#example)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -66,24 +64,8 @@ pip install gradio transformers torch
    cd Autocorrector-AI
    ```
 
-2. **Create a Virtual Environment (Recommended):**
 
-   ```bash
-   python -m venv venv
-   ```
-
-   Activate the virtual environment:
-   
-   - On Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-   - On macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
-
-3. **Install the Required Dependencies:**
+2. **Install the Required Dependencies:**
 
    ```bash
    pip install -r requirements.txt
@@ -158,8 +140,8 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 
 For any questions or feedback, please contact:
 
-- **Name:** Your Name
-- **Email:** your.email@example.com
+- **Name:** Kushan Sankalpa
+- **Email:** kushansankalpa717@gmail.com
 
 ---
 
